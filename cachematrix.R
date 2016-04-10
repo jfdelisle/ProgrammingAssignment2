@@ -6,7 +6,7 @@ makeCacheMatrix <- function(x = matrix()) {
   matinv <- NULL
   set <- function(y){
     x <<- y       ##caching
-    m <<- NULL    ##caching
+    matinv <<- NULL    ##caching
   }
   get <- function() x
   setmatrix <- function(solve) { matinv <<- solve }
