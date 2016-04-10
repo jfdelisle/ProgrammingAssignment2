@@ -22,7 +22,7 @@ cacheSolve <- function(x, ...) {
   matinv <- x$getmatrix()
   if( !is.null(matinv) )
   {
-    message("getting cached data")
+    message("Get cached data")
     return(matinv)
   }
   matrix <- x$get()
@@ -31,8 +31,4 @@ cacheSolve <- function(x, ...) {
   matinv
 }
 
-
-## x = rbind(c(1, -1/8), c(-1/8, 1)) 
-## m = makeCacheMatrix(x) 
-## m$get() 
 
